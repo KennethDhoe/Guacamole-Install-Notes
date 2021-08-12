@@ -32,18 +32,19 @@ Link our configuration to the nginx sites-enabled directory
 Edit our server.xml file from tomcat9 to make sure our source ip is available in tomcat.
 >nano /etc/tomcat9/server.xml
 
-add line <Valve className="org.apache.catalina.valves.RemoteIpValve"/> on top of the end tag  </host>
-the result should look like this:
+add line \<Valve className="org.apache.catalina.valves.RemoteIpValve"/> on top of the end tag  </host>
+>\<Valve className="org.apache.catalina.valves.RemoteIpValve"/>
 
- >
- >      <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
- >              prefix="localhost_access_log" suffix=".txt"
- >              pattern="%h %l %u %t &quot;%r&quot; %s %b" />
- >       <Valve className="org.apache.catalina.valves.RemoteIpValve"/>
- >     </Host>
- >   </Engine>
- > </Service>
- > </Server>
+The result should look like this:
+
+       <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+        <Valve className="org.apache.catalina.valves.RemoteIpValve"/>
+       </Host>
+      </Engine>
+     </Service>
+    </Server>
 
 Restart the tomcat service
 >systemctl restart tomcat9.service
