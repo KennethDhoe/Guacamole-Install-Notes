@@ -59,3 +59,11 @@ Restart the Guacmole service.
 
 Restart the Tomcat service.
 >systemctl restart tomcat9
+
+
+## Get Shared drive working in RDP
+
+Login to the linux host and create a folder in the root directory
+chown the root folder with the deamon user
+chown deamon /shared-folder-rdp
+
