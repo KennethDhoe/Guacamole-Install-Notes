@@ -52,7 +52,7 @@ Restart the tomcat service
 ## Install black-theme
 
 Download the black theme jar file and save it under the guacamole extensions folder.
->wget https://raw.githubusercontent.com/KennethDhoe/Guacamole-Dark/e10efcd8b8af00afb9e34b099009ca296ab789e4/branding.jar >> /etc/guacamole/extensions/branding.jar
+>wget https://raw.githubusercontent.com/KennethDhoe/Guacamole-Dark/e10efcd8b8af00afb9e34b099009ca296ab789e4/branding.jar -P /etc/guacamole/extensions/
 
 Restart the Guacmole service.
 >systemctl restart guacd
