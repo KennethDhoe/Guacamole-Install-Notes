@@ -65,5 +65,5 @@ Restart the Tomcat service.
 
 Login to the linux host and create a folder in the root directory
 chown the root folder with the deamon user
-chown deamon /shared-folder-rdp
+>chown deamon /shared-folder-rdp
 
