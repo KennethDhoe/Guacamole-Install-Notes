@@ -2,7 +2,7 @@
 
 ## Install Guacamole
 Download the installer script.
->wget https://raw.githubusercontent.com/MysticRyuujin/guac-install/master/guac-install.sh
+>wget [https://raw.githubusercontent.com/MysticRyuujin/guac-install/master/guac-install.sh](https://raw.githubusercontent.com/KennethDhoe/Guacamole-Install-Notes/main/guac_install.sh)
 
 Make the installer script executeable.
 >chmod +x guac-install.sh
